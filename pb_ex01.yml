@@ -1,0 +1,8 @@
+-
+  name: Copy files to target servers
+  hosts: all
+  tasks:
+    - name: Copy Test
+      copy:
+        src: /home/osboxes/Templates/exercises/ex01/test-file.txt
+        dest: /tmp/test-file.txt

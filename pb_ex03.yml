@@ -1,0 +1,17 @@
+-
+  name: Hairy People
+  hosts: all
+  vars:
+    person:
+      - name: Jack
+        hairy: True
+      - name: Jill
+        hairy: True
+      - name: Picard
+        hairy: False
+  tasks:
+    - name: Copy and modify Hair Test for  "{{ item.name }}"
+      lineinfile:
+        path: /tmp/test-file.txt
+        line: hello {{ item.name }} hair is {{ item.hairy }}
+      loop: "{{ person }}"

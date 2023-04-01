@@ -1,0 +1,13 @@
+-
+  name: Copy files to target servers and modify
+  hosts: all
+  vars:
+    fred: FRED
+  tasks:
+    - name: Copy and modify Test
+      copy:
+        src: /home/osboxes/Templates/exercises/ex01/test-file.txt
+        dest: /tmp/test-file.txt
+    - lineinfile:
+        path: /tmp/test-file.txt
+        line: hello {{ fred }}

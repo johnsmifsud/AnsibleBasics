@@ -1,0 +1,4 @@
+ansibleS00 ansible_host=192.168.56.102 ansible_ssh_private_key_file=/home/osboxes/.ssh/id_rsa
+ansibleS01 ansible_host=192.168.56.103 ansible_ssh_private_key_file=/home/osboxes/.ssh/id_rsa
+
+
