@@ -8,7 +8,11 @@
       - name: Jill
         hairy: True
       - name: Picard
-        hairy: False
+        hairy: Bald
+      - name: Riker
+        hairy: True
+      - name: Troi
+        hairy: True
   tasks:
     - name: Copy and modify Hair Test for  "{{ item.name }}"
       lineinfile:

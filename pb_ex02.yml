@@ -6,7 +6,7 @@
   tasks:
     - name: Copy and modify Test
       copy:
-        src: /home/osboxes/Templates/exercises/ex01/test-file.txt
+        src: /home/osboxes/Templates/ansible/AnsibleBasics/ex01/test-file.txt
         dest: /tmp/test-file.txt
     - lineinfile:
         path: /tmp/test-file.txt
